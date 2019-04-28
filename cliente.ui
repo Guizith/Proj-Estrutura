@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>cliente</class>
+ <widget class="QDialog" name="cliente">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>548</width>
-    <height>445</height>
+    <width>468</width>
+    <height>465</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Dialog</string>
   </property>
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>250</y>
+     <x>60</x>
+     <y>260</y>
      <width>51</width>
      <height>21</height>
     </rect>
@@ -26,53 +26,11 @@
     <string>N Quarto:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="telefoneText">
-   <property name="enabled">
-    <bool>true</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>170</y>
-     <width>261</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>110</x>
-     <y>100</y>
-     <width>41</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Nome:</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="salvarButton">
-   <property name="geometry">
-    <rect>
-     <x>340</x>
-     <y>370</y>
-     <width>111</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Salvar mudança</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>20</y>
+     <x>200</x>
+     <y>30</y>
      <width>121</width>
      <height>41</height>
     </rect>
@@ -88,56 +46,14 @@
     <string>Cliente M&amp;G</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>110</x>
-     <y>140</y>
-     <width>31</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>CPF:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>100</x>
-     <y>170</y>
-     <width>51</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Telefone:</string>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="quartoText">
    <property name="enabled">
     <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>250</y>
-     <width>261</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="nomeText">
-   <property name="enabled">
-    <bool>true</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>110</y>
+     <x>120</x>
+     <y>260</y>
      <width>261</width>
      <height>21</height>
     </rect>
@@ -149,8 +65,8 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>220</y>
+     <x>30</x>
+     <y>230</y>
      <width>91</width>
      <height>20</height>
     </rect>
@@ -165,8 +81,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>140</y>
+     <x>120</x>
+     <y>150</y>
      <width>261</width>
      <height>21</height>
     </rect>
@@ -175,14 +91,14 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLineEdit" name="checkinText">
+  <widget class="QLineEdit" name="nomeText">
    <property name="enabled">
     <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>220</y>
+     <x>120</x>
+     <y>120</y>
      <width>261</width>
      <height>21</height>
     </rect>
@@ -191,11 +107,79 @@
     <string/>
    </property>
   </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>110</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nome:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>150</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CPF:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="telefoneText">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>180</y>
+     <width>261</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="voltarButton">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>380</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Voltar a Tela Inicial</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="salvarButton">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>380</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Salvar mudança</string>
+   </property>
+  </widget>
   <widget class="QPushButton" name="checkoutButton">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>370</y>
+     <x>180</x>
+     <y>380</y>
      <width>111</width>
      <height>51</height>
     </rect>
@@ -207,8 +191,8 @@
   <widget class="QLabel" name="label_7">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>300</y>
+     <x>20</x>
+     <y>310</y>
      <width>101</width>
      <height>21</height>
     </rect>
@@ -223,24 +207,40 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>300</y>
+     <x>120</x>
+     <y>310</y>
      <width>261</width>
      <height>21</height>
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="voltarButton">
+  <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>370</y>
-     <width>111</width>
-     <height>51</height>
+     <x>70</x>
+     <y>180</y>
+     <width>51</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>Voltar a Tela Inicial</string>
+    <string>Telefone:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="checkinText">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>230</y>
+     <width>261</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>

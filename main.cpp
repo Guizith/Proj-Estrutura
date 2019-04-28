@@ -1,10 +1,10 @@
-#include "tela_inicial.h"
+#include "login_funcionario.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    Tela_Inicial w;
+    login_funcionario w;
     w.show();
 
     return a.exec();

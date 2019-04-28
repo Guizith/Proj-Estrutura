@@ -2,6 +2,10 @@
 #define TELA_INICIAL_H
 
 #include <QMainWindow>
+#include<buscar_cliente.h>
+#include<cadastro.h>
+#include<cliente.h>
+#include<checkout.h>
 
 namespace Ui {
 class Tela_Inicial;

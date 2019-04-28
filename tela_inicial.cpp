@@ -15,17 +15,29 @@ Tela_Inicial::~Tela_Inicial()
 
 void Tela_Inicial::on_Btn_LimpaDados_clicked()
 {
-    
+
 }
 
 void Tela_Inicial::on_novaReservaButton_clicked()
 {
-    //cadastro c= new cadastro();
-    //c.show(true)
+    cadastro c;
+    c.setModal(true);
+    c.exec();
 }
 
 void Tela_Inicial::on_BuscarButton_clicked()
 {
-    //buscar_cliente b= new buscar_cliente();
-    //b.show(true)
+    Buscar_cliente b;
+    b.setModal(true);
+    b.exec();
+
+
+}
+
+void Tela_Inicial::on_CheckoutButton_clicked()
+{
+    checkout co;
+    co.setModal(true);
+    co.exec();
+
 }

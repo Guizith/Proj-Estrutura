@@ -25,17 +25,29 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        buscar_cliente.cpp \
+        cadastro.cpp \
+        checkout.cpp \
+        cliente.cpp \
+        fila.cpp \
+        login_funcionario.cpp \
         main.cpp \
         tela_inicial.cpp
 
 HEADERS += \
+        buscar_cliente.h \
         cadastro.h \
+        checkout.h \
+        cliente.h \
+        login_funcionario.h \
         tela_inicial.h
 
 FORMS += \
         buscar_cliente.ui \
         cadastro.ui \
+        checkout.ui \
         cliente.ui \
+        login_funcionario.ui \
         tela_inicial.ui
 
 # Default rules for deployment.
