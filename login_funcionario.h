@@ -2,7 +2,9 @@
 #define LOGIN_FUNCIONARIO_H
 
 #include <QDialog>
-#include<tela_inicial.h>
+#include "tela_inicial.h"
+
+
 
 namespace Ui {
 class login_funcionario;
@@ -23,6 +25,7 @@ private slots:
 
 private:
     Ui::login_funcionario *ui;
+    Tela_Inicial *tela;
 };
 
 #endif // LOGIN_FUNCIONARIO_H
