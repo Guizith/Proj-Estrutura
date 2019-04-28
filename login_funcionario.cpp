@@ -30,12 +30,14 @@ void login_funcionario::on_loginButton_clicked()
     //p.show();
     QString username = ui->usuarioText->text();
     QString senha = ui->senhaText->text();
+        if(username == "admin" & senha == "1234"){
+            this->close();
+            tela = new Tela_Inicial(this);
+            tela->show();
 
-    if(username == "matheus" & senha == "1234"){
-        tela = new Tela_Inicial(this);
-        tela->show();
-    }else {
-        QMessageBox::information(this, tr("Erro"),tr("Usuario não encontrado"));
-}
+        }else {
+            QMessageBox::information(this, tr("Erro"),tr("Usuario não encontrado"));
+    }
+
 
 }

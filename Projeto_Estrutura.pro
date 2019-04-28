@@ -29,7 +29,6 @@ SOURCES += \
         cadastro.cpp \
         checkout.cpp \
         cliente.cpp \
-        fila.cpp \
         login_funcionario.cpp \
         main.cpp \
         tela_inicial.cpp

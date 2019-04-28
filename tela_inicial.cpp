@@ -20,6 +20,7 @@ void Tela_Inicial::on_Btn_LimpaDados_clicked()
 
 void Tela_Inicial::on_novaReservaButton_clicked()
 {
+    close();
     cadastro c;
     c.setModal(true);
     c.exec();
