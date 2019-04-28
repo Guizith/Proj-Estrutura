@@ -29,10 +29,13 @@ SOURCES += \
         tela_inicial.cpp
 
 HEADERS += \
+        cadastro.h \
         tela_inicial.h
 
 FORMS += \
+        buscar_cliente.ui \
         cadastro.ui \
+        cliente.ui \
         tela_inicial.ui
 
 # Default rules for deployment.

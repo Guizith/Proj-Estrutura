@@ -15,6 +15,15 @@ public:
     explicit Tela_Inicial(QWidget *parent = nullptr);
     ~Tela_Inicial();
 
+private slots:
+    void on_Btn_LimpaDados_clicked();
+    
+    void on_novaReservaButton_clicked();
+
+    void on_CheckoutButton_clicked();
+
+    void on_BuscarButton_clicked();
+
 private:
     Ui::Tela_Inicial *ui;
 };
