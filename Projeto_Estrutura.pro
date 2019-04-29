@@ -38,6 +38,7 @@ HEADERS += \
         cadastro.h \
         checkout.h \
         cliente.h \
+        les_users.h \
         login_funcionario.h \
         tela_inicial.h
 

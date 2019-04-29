@@ -15,6 +15,9 @@ public:
     explicit checkout(QWidget *parent = nullptr);
     ~checkout();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::checkout *ui;
 };

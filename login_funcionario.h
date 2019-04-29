@@ -23,6 +23,8 @@ private slots:
 
     void on_loginButton_clicked();
 
+    void on_cadastrarButton_clicked();
+
 private:
     Ui::login_funcionario *ui;
     Tela_Inicial *tela;

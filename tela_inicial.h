@@ -28,6 +28,8 @@ private slots:
 
     void on_BuscarButton_clicked();
 
+    void on_actionSair_triggered();
+
 private:
     Ui::Tela_Inicial *ui;
 };

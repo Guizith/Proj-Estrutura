@@ -28,6 +28,7 @@ void Tela_Inicial::on_novaReservaButton_clicked()
 
 void Tela_Inicial::on_BuscarButton_clicked()
 {
+    close();
     Buscar_cliente b;
     b.setModal(true);
     b.exec();
@@ -37,8 +38,14 @@ void Tela_Inicial::on_BuscarButton_clicked()
 
 void Tela_Inicial::on_CheckoutButton_clicked()
 {
+    close();
     checkout co;
     co.setModal(true);
     co.exec();
 
+}
+
+void Tela_Inicial::on_actionSair_triggered()
+{
+    close();
 }
