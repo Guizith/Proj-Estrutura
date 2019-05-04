@@ -18,6 +18,10 @@ public:
 private slots:
     void on_voltarButton_clicked();
 
+    void on_checkoutButton_clicked();
+
+    void on_salvarButton_clicked();
+
 private:
     Ui::cliente *ui;
 };

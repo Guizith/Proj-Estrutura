@@ -1,5 +1,6 @@
 #include "tela_inicial.h"
 #include "ui_tela_inicial.h"
+#include<lista.h>
 
 Tela_Inicial::Tela_Inicial(QWidget *parent) :
     QMainWindow(parent),
@@ -48,4 +49,12 @@ void Tela_Inicial::on_CheckoutButton_clicked()
 void Tela_Inicial::on_actionSair_triggered()
 {
     close();
+}
+
+void Tela_Inicial::on_ListaButton_clicked()
+{
+    close();
+    lista l;
+    l.setModal(true);
+    l.exec();
 }

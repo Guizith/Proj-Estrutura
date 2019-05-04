@@ -29,6 +29,7 @@ SOURCES += \
         cadastro.cpp \
         checkout.cpp \
         cliente.cpp \
+        lista.cpp \
         login_funcionario.cpp \
         main.cpp \
         tela_inicial.cpp
@@ -39,6 +40,7 @@ HEADERS += \
         checkout.h \
         cliente.h \
         les_users.h \
+        lista.h \
         login_funcionario.h \
         tela_inicial.h
 
@@ -47,6 +49,7 @@ FORMS += \
         cadastro.ui \
         checkout.ui \
         cliente.ui \
+        lista.ui \
         login_funcionario.ui \
         tela_inicial.ui
 

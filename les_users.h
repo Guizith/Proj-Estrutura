@@ -25,10 +25,10 @@ class LES{
             password[n]= x;
             return true;
         }
-        bool insereUser(string x){
+        bool insereUser(string y){
             if(n==MAX)
                 return false;
-            user[n]= x;
+            user[n]= y;
             n++;
             return true;
         }

@@ -30,6 +30,8 @@ private slots:
 
     void on_actionSair_triggered();
 
+    void on_ListaButton_clicked();
+
 private:
     Ui::Tela_Inicial *ui;
 };

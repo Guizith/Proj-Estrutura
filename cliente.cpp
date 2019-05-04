@@ -1,6 +1,7 @@
 #include "cliente.h"
 #include "ui_cliente.h"
 #include<tela_inicial.h>
+#include<checkout.h>
 
 cliente::cliente(QWidget *parent, QString nome,QString cpf,QString tel,QString checkin,QString quarto) :
     QDialog(parent),
@@ -23,6 +24,21 @@ cliente::~cliente()
 
 void cliente::on_voltarButton_clicked()
 {
+    close();
+    Tela_Inicial* tela= new Tela_Inicial();
+    tela->show();
+}
+
+void cliente::on_checkoutButton_clicked()
+{
+    close();
+    checkout* t= new checkout();
+    t->show();
+}
+
+void cliente::on_salvarButton_clicked()
+{
+    //salvar e fechar
     close();
     Tela_Inicial* tela= new Tela_Inicial();
     tela->show();

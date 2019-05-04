@@ -28,20 +28,20 @@ void login_funcionario::on_loginButton_clicked()
 {
     QString username = ui->usuarioText->text();
     QString senha = ui->senhaText->text();
+    bool t = 0;
 
     for(int i = 0;i<l->n;i++){
-
-        //algum erro na comparação, usuario admin 1234 esta funcionando,porem os cadastrados só funcionam depois de 2 ou mais cadastros
-        if(username.toStdString() == l->user[i] & senha.toStdString() == l->password[i]){
+        if(username.toStdString() == l->user[i] && senha.toStdString() == l->password[i]){
             this->close();
             tela = new Tela_Inicial(this);
             tela->show();
-
-        }else {
-            QMessageBox::information(this, tr("Erro"),tr("Usuario não encontrado"));
+            //break n funcionou, entao foi utilizado uma variavel bool para validar a criação da tela e não fazer o chamado da mensagem de erro
+            t=1;
+        }
     }
-}
-
+    if(t!=1){
+       QMessageBox::information(this, tr("Erro"),tr("Usuario não encontrado"));
+    }
 }
 
 void login_funcionario::on_cadastrarButton_clicked()
@@ -50,6 +50,17 @@ void login_funcionario::on_cadastrarButton_clicked()
     QString username = ui->usuarioText->text();
     QString senha = ui->senhaText->text();
 
-    l->insereUser(username.toStdString());
-    l->inserePassword(senha.toStdString());
+
+    //Verificação de preenchimento dos campos para cadastro
+    if(username == "" && senha == "" ){
+        QMessageBox::information(this, tr("Erro"),tr("Os campos não foram preenchidos corretamente"));
+    }else {
+
+        std::cout<<"usuario== " + username.toStdString() <<endl;
+        std::cout<<"senha== " + senha.toStdString() <<endl;
+
+        l->inserePassword(senha.toStdString());
+        l->insereUser(username.toStdString());
+    }
+
 }
