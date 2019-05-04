@@ -106,6 +106,7 @@
     <property name="title">
      <string>Registros</string>
     </property>
+    <addaction name="actionLista_de_Registros"/>
    </widget>
    <addaction name="menuSystem"/>
    <addaction name="menuRegistros"/>
@@ -122,6 +123,11 @@
   <action name="actionSair">
    <property name="text">
     <string>Sair</string>
+   </property>
+  </action>
+  <action name="actionLista_de_Registros">
+   <property name="text">
+    <string>Lista de Registros</string>
    </property>
   </action>
  </widget>

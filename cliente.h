@@ -12,7 +12,7 @@ class cliente : public QDialog
     Q_OBJECT
 
 public:
-    explicit cliente(QWidget *parent = nullptr, QString nome =0,QString cpf= 0,QString tel= 0,QString checkin= 0,QString quarto= 0);
+    explicit cliente(QWidget *parent = nullptr,QString id=0, QString nome =0,QString cpf= 0,QString tel= 0,QString checkin= 0,QString quarto= 0);
     ~cliente();
 
 private slots:

@@ -1,6 +1,8 @@
 #include "tela_inicial.h"
 #include "ui_tela_inicial.h"
 #include<lista.h>
+#include<registros.h>
+
 
 Tela_Inicial::Tela_Inicial(QWidget *parent) :
     QMainWindow(parent),
@@ -57,4 +59,12 @@ void Tela_Inicial::on_ListaButton_clicked()
     lista l;
     l.setModal(true);
     l.exec();
+}
+
+void Tela_Inicial::on_actionLista_de_Registros_triggered()
+{
+    close();
+    registros r;
+    r.setModal(true);
+    r.exec();
 }

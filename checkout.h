@@ -12,7 +12,7 @@ class checkout : public QDialog
     Q_OBJECT
 
 public:
-    explicit checkout(QWidget *parent = nullptr);
+    explicit checkout(QWidget *parent = nullptr,QString id=0, QString nome =0,QString cpf= 0,QString tel= 0,QString checkin= 0,QString quarto= 0);
     ~checkout();
 
 private slots:
