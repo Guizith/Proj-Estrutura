@@ -28,12 +28,6 @@ private slots:
 
     void on_BuscarButton_clicked();
 
-    void on_actionSair_triggered();
-
-    void on_ListaButton_clicked();
-
-    void on_actionLista_de_Registros_triggered();
-
 private:
     Ui::Tela_Inicial *ui;
 };

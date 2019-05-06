@@ -29,10 +29,8 @@ SOURCES += \
         cadastro.cpp \
         checkout.cpp \
         cliente.cpp \
-        lista.cpp \
         login_funcionario.cpp \
         main.cpp \
-        registros.cpp \
         tela_inicial.cpp
 
 HEADERS += \
@@ -40,12 +38,7 @@ HEADERS += \
         cadastro.h \
         checkout.h \
         cliente.h \
-        lde_reg.h \
-        les_users.h \
-        lista.h \
         login_funcionario.h \
-        no_lde.h \
-        registros.h \
         tela_inicial.h
 
 FORMS += \
@@ -53,9 +46,7 @@ FORMS += \
         cadastro.ui \
         checkout.ui \
         cliente.ui \
-        lista.ui \
         login_funcionario.ui \
-        registros.ui \
         tela_inicial.ui
 
 # Default rules for deployment.
